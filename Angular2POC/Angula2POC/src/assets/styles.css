@@ -1,0 +1,12 @@
+table, th, td {
+    border: 1px solid black;
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  white-space: normal!important;
+}
+
+td {
+  word-wrap: break-word;
+}

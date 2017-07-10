@@ -1,0 +1,50 @@
+
+<div>  
+    <div class="page-header">  
+        <h1>{{title}}</h1>  
+    </div>  
+    <div>
+             
+        <table>
+            <thead>
+            <tr>
+                <th>
+                    Title
+                </th>
+                <th>
+                    URL
+                </th>
+                <th>
+                    Descrition
+                </th>
+                <th>
+                    Logo
+                </th>
+            </tr>
+         </thead>
+            <tr  *ngFor = "let article of articles">
+                <td>
+                    <h4> {{article.title}} </h4>
+                </td>
+                <td>
+                    <a href={{article.url}} style="display: block; color: black">
+                       {{article.url}}
+                    </a>
+                    
+                </td>
+                <td>
+                    <p class="list-group-item-text"> {{article.description}}</p>
+                </td>
+                <td>
+                    <a href={{article.imageHref}} style="display: block; color: black">
+                       {{article.imageHref}}
+                    </a>
+                    
+                </td>
+            </tr>
+        </table>
+       
+    </div>
+</div>  
+ 
+  
